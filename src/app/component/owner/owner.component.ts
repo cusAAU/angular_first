@@ -2,11 +2,10 @@ import {Component, OnInit} from '@angular/core';
 import {OwnerService} from '../../service/owner.service';
 import {Owner} from '../../dto/owner';
 import { HeaderComponent } from '../header/header.component';
-import {DataTableComponent} from '../../data-table/data-table.component'
 
 @Component({
   selector: 'app-owner',
-  templateUrl: '../ownerTemplate.component.html',
+  templateUrl: './owner.component.html',
   styleUrls: ['./owner.component.scss']
 })
 export class OwnerComponent implements OnInit {

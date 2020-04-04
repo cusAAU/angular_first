@@ -5,7 +5,7 @@ import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-platformeditor',
-  templateUrl: '../platformeditorTemplate.component.html',
+  templateUrl: './platformeditor.component.html',
   styleUrls: ['./platformeditor.component.scss']
 })
 export class PlatformEditorComponent implements OnInit {

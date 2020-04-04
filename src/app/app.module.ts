@@ -8,12 +8,8 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './component/header/header.component';
 import {OwnerComponent} from './component/owner/owner.component';
 import {HttpClientModule} from '@angular/common/http';
-import {DataTableComponent} from './data-table/data-table.component';
-import {MatTableModule} from '@angular/material/table';
-import { MatButtonModule } from '@angular/material/button';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import { HorsetableComponent } from './component/horsetable/horsetable.component';
+import { HorserowComponent } from './component/horsetable/horserow/horserow.component';
 
 
 
@@ -22,19 +18,13 @@ import { MatSortModule } from '@angular/material/sort';
     AppComponent,
     HeaderComponent,
     OwnerComponent,
-    DataTableComponent
+    HorsetableComponent,
+    HorserowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    // CdkTableModule,
-    // DataTableComponent,
-    // MatButtonModule,
-    // LayoutModule,
-    // MatTableModule,
-    // MatPaginatorModule,
-    // MatSortModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
