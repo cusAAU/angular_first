@@ -10,8 +10,13 @@ import {OwnerComponent} from './component/owner/owner.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HorsetableComponent } from './component/horsetable/horsetable.component';
 import { HorserowComponent } from './component/horsetable/horserow/horserow.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+//ng material modules
+import { TodosComponent } from './component/todos/todos.component';
+import { TodoItemComponent } from './component/todo-item/todo-item.component';
+import { AddTodoComponent } from './component/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -19,12 +24,17 @@ import { HorserowComponent } from './component/horsetable/horserow/horserow.comp
     HeaderComponent,
     OwnerComponent,
     HorsetableComponent,
-    HorserowComponent
+    HorserowComponent,
+    TodosComponent,
+    TodoItemComponent,
+    AddTodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
